@@ -20,6 +20,10 @@ Search the project for these and swap in real values:
 | `[Service city]` | title, hero, scope, FAQ, example report, footer |
 | `[describe service area, e.g. districts or travel radius]` | FAQ "Which areas do you cover?" |
 | `{{BOOKING_URL}}` | booking button in the final section |
+| `[Your name]`, `[YN]` | "Who I am" section heading and photo placeholder initials |
+| `[Two or three sentences in your own voice…]` | "Who I am" intro paragraph |
+| `[Languages you speak]` | "Who I am" facts |
+| Photo | replace the `.about-photo` placeholder block with an `<img>` of you (with real alt text) |
 | `[email@example.com]` | booking card and footer (also in the `mailto:` links) |
 | `[+00 000 000 000]` and `https://wa.me/[number]` | WhatsApp contact in the booking card and footer |
 
@@ -30,10 +34,13 @@ Every "Book a free consultation" button elsewhere on the page scrolls to the boo
 - `index.html`: all content
 - `styles.css`: design tokens at the top, then one block per section
 - `script.js`: header theme switch, mobile menu, scroll reveals, the word-by-word statement reveal, and the example report tabs
-- `assets/hero-contours.svg`: original hero line artwork
+- `assets/hero-contours.svg`: original hero line artwork (used as a faint texture behind the hero)
 - `assets/favicon.svg`
 
 ## Notes
+
+- Copy is written in the first person ("I"), because the service is one local person. If you work as a small team, switch it to "we".
+- The hero shows an illustration of a viewing call, not a real call.
 
 - The viewing report section is labelled as an illustrative example. Its property details are invented to show the format.
 - All motion is turned off when the visitor's system asks for reduced motion.
