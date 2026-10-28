@@ -36,14 +36,14 @@
         toggle.focus();
       }
     });
-    window.matchMedia("(min-width: 1001px)").addEventListener("change", function (mq) {
+    window.matchMedia("(min-width: 901px)").addEventListener("change", function (mq) {
       if (mq.matches) setOpen(false);
     });
   }
 
   /* Reveal sections as they enter the viewport */
   var revealTargets = document.querySelectorAll(
-    ".section-head, .about-photo, .about-copy, .audience-title, .audience, .plans, .compare-wrap, .report, .rows, .faq-list, .book-card, .split-sticky > :first-child, .booking .split > :first-child"
+    ".section-head, .plans, .compare-wrap, .report, .rows, .faq-list, .book-card, .split-sticky > :first-child, .booking .split > :first-child"
   );
   var steps = document.querySelector("[data-steps]");
   if ("IntersectionObserver" in window) {
